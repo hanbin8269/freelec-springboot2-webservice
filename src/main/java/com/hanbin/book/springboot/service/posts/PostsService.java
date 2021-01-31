@@ -2,13 +2,16 @@ package com.hanbin.book.springboot.service.posts;
 
 import com.hanbin.book.springboot.domain.posts.Posts;
 import com.hanbin.book.springboot.domain.posts.PostsRepository;
+import com.hanbin.book.springboot.web.dto.PostsListResponseDto;
 import com.hanbin.book.springboot.web.dto.PostsResponseDto;
 import com.hanbin.book.springboot.web.dto.PostsSaveRequestDto;
 import com.hanbin.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -38,5 +41,12 @@ public class PostsService {
 
         return new PostsResponseDto(entity);
         // Dto로 반환함 (Controller에서 써야하기 때문에)
+    }
+
+    @Transactional(readOnly = true) // 트랜잭션 범위는 유지하되 조회기능만 남겨둠
+    public List<PostsListResponseDto> findAllDesc(){
+        return postsRepository.findAllDesc().stream()
+                .map(PostsListResponseDto::new)
+                .collect(Collectors.toList());
     }
 }
