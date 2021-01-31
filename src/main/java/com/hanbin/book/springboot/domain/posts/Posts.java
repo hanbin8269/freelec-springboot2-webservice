@@ -1,4 +1,5 @@
 package com.hanbin.book.springboot.domain.posts;
+import com.hanbin.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor // 덜 중요한 롬복 어노테이션은 위로 물러남
 @Entity // 테이블과 링크될 클래스임을 나타냄
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // primary key 필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY) // primary key 생성 규칙 (IDENTITY = auto_inclement)
