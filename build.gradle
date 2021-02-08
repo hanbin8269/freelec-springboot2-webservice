@@ -28,8 +28,10 @@ repositories { // 의존성(라이브러리)를 어떤 원격 저장소에서 �
 dependencies { // 프로젝트 개발에 필요한 의존성 선언
     compile('org.springframework.boot:spring-boot-starter-web') // 버전을 명시하지않아야 위에서 선언한 springBootVersion을 따라가게 됨
     compile('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
+    compile('org.springframework.session:spring-session-jdbc')
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     testCompile('org.springframework.boot:spring-boot-starter-test')
