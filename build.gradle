@@ -30,13 +30,12 @@ dependencies { // 프로젝트 개발에 필요한 의존성 선언
     compile('org.projectlombok:lombok')
     annotationProcessor('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('com.h2database:h2')
-    compile('org.springframework.session:spring-session-jdbc')
     compile('org.springframework.boot:spring-boot-starter-mustache')
-    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-}
+    compile('com.h2database:h2')
 
-test {
-    useJUnitPlatform()
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    compile('org.springframework.session:spring-session-jdbc')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.security:spring-security-test")
 }
