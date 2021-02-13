@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hanbin.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-08T15:24:46" hostname="DESKTOP-975V3I6" time="0.407">
+  <properties/>
+  <testcase name="메인페이지_로딩" classname="com.hanbin.book.springboot.web.IndexControllerTest" time="0.407">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expecting:&#13;&#10; &lt;&quot;&lt;!DOCTYPE html&gt;&#13;&#10;&lt;html&gt;&#13;&#10;&lt;head&gt;&#13;&#10;    &lt;title&gt;스프링 부트 웹서비스&lt;/title&gt;&#13;&#10;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;&#13;&#10;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;&#13;&#10;&lt;/head&gt;&#13;&#10;&lt;body&gt;&#13;&#10;    &lt;h1&gt;스프링 부트로 시작하는 웹 서비스&lt;/h1&gt;&#13;&#10;&lt;div class=&quot;col-md-12&quot;&gt;&#13;&#10;    &lt;div class=&quot;row&quot;&gt;&#13;&#10;        &lt;div class=&quot;col-md-6&quot;&gt;&#13;&#10;            &lt;a href=&quot;/posts/save&quot; role=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;글 등록&lt;/a&gt;&#13;&#10;                &lt;a href=&quot;/oauth2/authorization/google&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Google Login&lt;/a&gt;&#13;&#10;&#13;&#10;                &lt;a href=&quot;/oauth2/authorization/naver&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Naver Login&lt;/a&gt;&#13;&#10;        &lt;/div&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;br&gt;&#13;&#10;    &lt;table class=&quot;table table-horizontal table-bordered&quot;&gt;&#13;&#10;        &lt;thead class=&quot;thead-strong&quot;&gt;&#13;&#10;        &lt;tr&gt;&#13;&#10;            &lt;th&gt;게시글 번호&lt;/th&gt;&#13;&#10;            &lt;th&gt;제목&lt;/th&gt;&#13;&#10;            &lt;th&gt;작성자&lt;/th&gt;&#13;&#10;            &lt;th&gt;최종 수정일&lt;/th&gt;&#13;&#10;        &lt;/tr&gt;&#13;&#10;        &lt;/thead&gt;&#13;&#10;        &lt;tbody id=&quot;tbody&quot;&gt;&#13;&#10;        &lt;/tbody&gt;&#13;&#10;    &lt;/table&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;&#13;&#10;&lt;script src=&quot;https://stackpath/bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&#13;&#10;&lt;script src=&quot;/js/app/index.js&quot;&gt;&lt;/script&gt;&#13;&#10;&lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#13;&#10;to contain:&#13;&#10; &lt;&quot;스프링 부르로 시작하는 웹 서비스&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;&quot;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;스프링 부트 웹서비스&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;스프링 부트로 시작하는 웹 서비스&lt;/h1&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;a href=&quot;/posts/save&quot; role=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;글 등록&lt;/a&gt;
+                &lt;a href=&quot;/oauth2/authorization/google&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Google Login&lt;/a&gt;
+
+                &lt;a href=&quot;/oauth2/authorization/naver&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Naver Login&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;table class=&quot;table table-horizontal table-bordered&quot;&gt;
+        &lt;thead class=&quot;thead-strong&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;게시글 번호&lt;/th&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;th&gt;작성자&lt;/th&gt;
+            &lt;th&gt;최종 수정일&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody id=&quot;tbody&quot;&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://stackpath/bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/app/index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;&gt;
+to contain:
+ &lt;&quot;스프링 부르로 시작하는 웹 서비스&quot;&gt; 
+	at com.hanbin.book.springboot.web.IndexControllerTest.메인페이지_로딩(IndexControllerTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2021-02-09 00:24:41.219  INFO 9360 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hanbin.book.springboot.web.IndexControllerTest], using SpringBootContextLoader
+2021-02-09 00:24:41.221  INFO 9360 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hanbin.book.springboot.web.IndexControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-09 00:24:41.221  INFO 9360 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hanbin.book.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-09 00:24:41.224  INFO 9360 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.hanbin.book.springboot.Application for test class com.hanbin.book.springboot.web.IndexControllerTest
+2021-02-09 00:24:41.228  INFO 9360 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-09 00:24:41.229  INFO 9360 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29c55ce9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5b979fd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c3c4d91, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@25aeddc9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@260fff81, org.springframework.test.context.transaction.TransactionalTestExecutionListener@41819594, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5fcf18f0, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@c5cd655, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@55f6d3a8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1816c1b7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3fb942dd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@55bdd501, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3635378d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@18005385]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.9.RELEASE)
+
+2021-02-09 00:24:41.300  INFO 9360 --- [    Test worker] c.h.b.s.web.IndexControllerTest          : Starting IndexControllerTest on DESKTOP-975V3I6 with PID 9360 (started by hanbi in C:\workspace\study)
+2021-02-09 00:24:41.300  INFO 9360 --- [    Test worker] c.h.b.s.web.IndexControllerTest          : The following profiles are active: oauth
+2021-02-09 00:24:41.678  INFO 9360 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-09 00:24:41.769  INFO 9360 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79ms. Found 2 repository interfaces.
+2021-02-09 00:24:42.068  INFO 9360 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d3ec9f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-09 00:24:42.455  INFO 9360 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-02-09 00:24:42.490  INFO 9360 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-09 00:24:42.490  INFO 9360 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-02-09 00:24:42.708  INFO 9360 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-09 00:24:42.709  INFO 9360 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1405 ms
+2021-02-09 00:24:42.996  INFO 9360 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-09 00:24:43.195  INFO 9360 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-09 00:24:43.308  INFO 9360 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-09 00:24:43.393  INFO 9360 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2021-02-09 00:24:43.396  INFO 9360 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-09 00:24:43.602  INFO 9360 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-02-09 00:24:43.791  INFO 9360 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Hibernate: drop table if exists posts
+Hibernate: drop table if exists user
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
+2021-02-09 00:24:44.618  INFO 9360 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@cd9cabd'
+2021-02-09 00:24:44.623  INFO 9360 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-09 00:24:45.359  INFO 9360 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-02-09 00:24:45.806  INFO 9360 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@353874e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@351f57cd, org.springframework.security.web.header.HeaderWriterFilter@13db4bbd, org.springframework.security.web.authentication.logout.LogoutFilter@5dac0e2c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@58dbea18, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@14a9aebc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f0bb587, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50c4beb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e7428c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1967cb69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11ef1f79, org.springframework.security.web.session.SessionManagementFilter@21fec95a, org.springframework.security.web.access.ExceptionTranslationFilter@6b28fcfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@329ad644]
+2021-02-09 00:24:46.188  INFO 9360 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-09 00:24:46.251  WARN 9360 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-09 00:24:46.303  INFO 9360 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-09 00:24:46.677  INFO 9360 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-02-09 00:24:46.703  INFO 9360 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51176 (http) with context path ''
+2021-02-09 00:24:46.706  INFO 9360 --- [    Test worker] c.h.b.s.web.IndexControllerTest          : Started IndexControllerTest in 5.472 seconds (JVM running for 8.821)
+2021-02-09 00:24:46.901  INFO 9360 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 00:24:46.901  INFO 9360 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-09 00:24:46.925  INFO 9360 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_ order by posts0_.id DESC
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
