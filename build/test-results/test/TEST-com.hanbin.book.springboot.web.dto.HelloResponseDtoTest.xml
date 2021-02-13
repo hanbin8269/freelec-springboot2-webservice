@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hanbin.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-08T15:24:49" hostname="DESKTOP-975V3I6" time="0.002">
-  <properties/>
-  <testcase name="롬북_기능_테스트" classname="com.hanbin.book.springboot.web.dto.HelloResponseDtoTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
