@@ -22,7 +22,7 @@ before_deploy: # deploy 명렁어 실행 전 수행, CodeDeploy는 jar을 인식
   - cp scripts/*.sh before-deploy/
   - cp appspec.yml before-deploy/
   - cp build/libs/*.jar before-deploy/
-  - cp before-deploy && zip -r before-deploy *
+  - cp before-deploy && zip -r before-deploy.zip *
   - cd ../ && mkdir -p deploy
   - mv before-deploy/before-deploy.zip deploy/freelec-springboot2-webservice.zip
 
