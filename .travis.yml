@@ -16,9 +16,11 @@ script: "./gradlew clean build"
 
 before_install:
   - chmod +x gradlew
+  - chmod +x deploy.sh
 
 before_deploy: # deploy 명렁어 실행 전 수행, CodeDeploy는 jar을 인식하지 못하기 때문에 기타 설정과 함께 zip으로 압축
   - mkdir -p before-deploy
+  - chmod +x scripts/*.sh
   - cp scripts/*.sh before-deploy/
   - cp appspec.yml before-deploy/
   - cp build/libs/*.jar before-deploy/
