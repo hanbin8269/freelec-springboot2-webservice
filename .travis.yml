@@ -18,9 +18,13 @@ before_install:
   - chmod +x gradlew
 
 before_deploy: # deploy 명렁어 실행 전 수행, CodeDeploy는 jar을 인식하지 못하기 때문에 기타 설정과 함께 zip으로 압축
-  - zip -r freelec-springboot2-webservice *
-  - mkdir -p deploy
-  - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
+  - mkdir -p before-deploy
+  - cp scripts/*.sh before-deploy/
+  - cp appspec.yml before-deploy/
+  - cp build/libs/*.jar before-deploy/
+  - cp before-deploy && zip -r before-deploy *
+  - cd ../ && mkdir -p deploy
+  - mv before-deploy/before-deploy.zip deploy/freelec-springboot2-webservice.zip
 
 deploy: # s3로 파일 업로드 및 CodeDeploy 로 배포 등 외부 서비스와 연동될 행위 선언
   - provider: s3
