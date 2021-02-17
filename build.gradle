@@ -18,7 +18,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group 'com.hanbin.book'
-version '1.0.1-SNAPSHOT'
+version '1.0.1-SNAPSHOT-' + new Date().format("yyyMMddHHmmss")
 
 repositories { // 의존성(라이브러리)를 어떤 원격 저장소에서 받을 것인지
     mavenCentral() // 기본적으로 이걸 많이 사용함
