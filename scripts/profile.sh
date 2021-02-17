@@ -19,6 +19,7 @@ function find_idle_profile()
     IDLE_PROFILE=real2
   else
     IDLE_PROFILE=real1
+  fi
 
   echo "${IDLE_PROFILE}"
 }
